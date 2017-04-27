@@ -1,0 +1,15 @@
+syntax = "proto2";
+package   mimabook;
+
+//define the password book
+message mimacode {
+	required string app = 1 ; //application
+	required string name = 2 ; //user name
+	optional int32 priority = 3 ;//priority
+	required string password = 4;//password
+}
+message myprivatebook {
+	required string username = 1 ;
+	required string userpass = 2 ;
+	repeated mimacode mimainfo = 3;
+}
